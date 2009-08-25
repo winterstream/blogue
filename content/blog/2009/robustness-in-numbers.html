@@ -1,0 +1,120 @@
+{% extends "_post.html" %}
+{%load webdesign %}
+{%hyde
+    
+    title: Robustness in numbers
+    created: 2009-08-25 22:07:29
+%}
+
+{% block article %}
+
+{%article%}
+{% excerpt %}
+
+<p>Biological systems are resilient against certain kinds of damage
+and defects. Animals and insects continue to function when losing
+limbs or even certain organs. Organisms constantly deal with novel and
+unexpected stimilu in their environments.</p>
+
+{%endexcerpt%}
+
+<p>But for all this robustness, biological systems are also
+fragile. Minor damage to the heart or the lack of a certian gene are
+enough to cause death. A virus - a tiny biological program built from
+RNA or DNA - subverts the machinery of the cell to replicate itself
+and can do enough damage to kill its host organism.</p>
+
+<h1>I'll know it when I see it</h1>
+
+<p>There is no agreed upon definition of what robustness is. But I
+think that everyone has a vague idea of what it is and I am sure that
+we all agree on the examples given in the opening paragraph.</p>
+
+<p>The reader would be forgiven for thinking that this is a dry,
+academic point that holds no interest for anyone outside of my narrow
+field of Systems Biology. I hope to convince you otherwise.</p>
+
+<h1>Nature is a fine engineer</h1>
+
+<p>There is much interest in taking engineering lessons from Nature
+because biological systems are robust, self-healing and yet seem to be
+built using simple principles.</p>
+
+<p>Telecommunications networks (of which the Internet is the largest
+example) have attracted researchers interested in robustness, because
+of:
+
+<ul>
+<li>their simplicity: at a high level, you don't have to think about
+the complicated technology used to connect nodes in the network - you
+only have to know that two nodes are connected,</li>
+<li>the desire that our communications systems continue working in the
+face of random failures or targeted attacks,</li>
+<li>the sparsity of interconnections due to the high cost of
+maintaining many connections.</li>
+</ul>
+
+<p>Nature seems to achieve simplity, robustness and low cost all at
+the same time. Engineers are lucky if they manage two out of these
+three.</p>
+
+<h1>Limited resources require sacrifices</h1>
+
+<p>A telecommunications network is maximally robust against failure if
+every party is connected to every other party. We lack the economic
+and physical resources to achieve this: hundreds of millions (if not
+billions) of cables would be needed to connected every telephone,
+computer or Blackberry to every other device.</p>
+
+<p>The situation for biological organisms is similar: in principle, an
+organism could have much more backup capacity to deal with failures
+(two hearts instead of one or four arms instead of two). But every
+additional organ needs energy, both in food and in maintenance. And
+every additional bit of biomass makes escaping from danger more
+difficult.</p>
+
+<p>Because all of the earth's resources are limited, we should forget
+about thinking of robustness in terms of unlimited resources. It means
+that we have to avoid thinking of robustness as implying guaranteed
+failure recovery. Failure is always an option.</p>
+
+<h1>Nature's tricks and trade-offs</h1>
+
+<p>Nature has selected for making organisms resilient against common
+failures without providing protection against fatal faults that occur
+with low probability.</p>
+
+<p>This makes sense in the wild - all biological species exist as
+populations of many individuals. The death of a single individual does
+not destroy the entire population. What organisms lack in robustness,
+Nature makes up for in numbers. Replication, from the point of view of
+a population, is a simple and effective form of robustness. It becomes
+even more effective when coupled with mutation, since not all
+organisms are susceptible to the same diseases.</p>
+
+<p>But still, simple diseases can wipe out entire species. Nature
+can never fully hide its soft underbelly.</p>
+
+<h1>Conclusion</h1>
+
+<p>Let us learn how biological systems fail. In this way, if we apply
+ideas from Nature, we'll be prepared for failure.</p>
+
+<p>Finally, we should avoid the temptation to view the everything as
+an organism, as we do the Internet. No living organism exists as the
+only member of its species (at least not for an appreciable amount of
+time).</p>
+
+<p>If we succeed in applying Nature's lessons well, but at the wrong
+level (for example by treating the Internet as an organism rather than
+a population of organisms), we're sure to be disappointed by the
+results.</p>
+
+<p>Maybe it can be argued that a population is just an organism
+itself. Perhaps; but there is no guarantee that it is goverened by the
+same systems that govern the biology of the individuals in the
+population.</p>
+
+{%endarticle%}
+
+{% endblock %}
